@@ -110,6 +110,24 @@
     color: var(--muted);
   }
 
+  .byline {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+  }
+
+  .byline a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .byline a:hover,
+  .byline a:focus {
+    border-bottom-color: var(--accent);
+  }
+
   ol {
     list-style: none;
     margin: 0;
@@ -160,9 +178,9 @@
 <main>
   <div class="hero">
     <div class="hero-strip">
-      <img src="images/san-antonio-1873.jpg" alt="1873 bird's-eye map of San Antonio">
-      <img src="images/holc-racial-concentration-1934.jpg" alt="1934 HOLC map of San Antonio showing racial concentration by neighborhood">
-      <img src="images/eviction-map.jpg" alt="Map of evictions by census tract in San Antonio">
+      <img src="san-antonio-1873.jpg" alt="1873 bird's-eye map of San Antonio">
+      <img src="holc-racial-concentration-1934.jpg" alt="1934 HOLC map of San Antonio showing racial concentration by neighborhood">
+      <img src="eviction-map.jpg" alt="Map of evictions by census tract in San Antonio">
     </div>
     <div class="hero-text">
       <h1>Unpacking Poverty</h1>
@@ -178,6 +196,7 @@
   <header>
     <h1>Articles Published</h1>
     <div class="subtitle">A running list</div>
+    <div class="byline">All articles by <a href="https://lilycasura.com" target="_blank" rel="noopener">Lily G. Casura, MSW</a> unless otherwise noted.</div>
   </header>
 
   <ol>

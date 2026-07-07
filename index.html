@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unpacking Poverty</title>
+<style>
+  :root {
+    --ink: #22201d;
+    --paper: #f7f4ee;
+    --rule: #cfc7b8;
+    --accent: #7a3b2e;
+    --muted: #6b6558;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem 6rem;
+  }
+
+  .hero {
+    position: relative;
+    margin-bottom: 0.5rem;
+    background: var(--ink);
+    overflow: hidden;
+  }
+
+  .hero-strip {
+    display: flex;
+    gap: 2px;
+  }
+
+  .hero-strip img {
+    display: block;
+    width: 33.333%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: sepia(15%);
+  }
+
+  .hero-strip img:nth-child(1) { object-position: center 60%; }
+  .hero-strip img:nth-child(2) { object-position: center 25%; }
+  .hero-strip img:nth-child(3) { object-position: center center; }
+
+  .hero-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1.75rem 1.75rem 1.5rem;
+    color: var(--paper);
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.4rem;
+  }
+
+  .hero-text .subtitle {
+    color: var(--paper);
+    opacity: 0.85;
+  }
+
+  .hero-captions {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-captions div {
+    width: 33.333%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-align: center;
+    padding-top: 0.4rem;
+  }
+
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.35rem;
+  }
+
+  .subtitle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: article;
+  }
+
+  li {
+    counter-increment: article;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    gap: 1rem;
+  }
+
+  li:first-child { padding-top: 0; }
+
+  li::before {
+    content: counter(article, decimal-leading-zero);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--muted);
+    padding-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .entry a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1.05rem;
+    border-bottom: 1px solid transparent;
+  }
+
+  .entry a:hover,
+  .entry a:focus {
+    border-bottom-color: var(--accent);
+  }
+
+  .meta {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <div class="hero-strip">
+      <img src="images/san-antonio-1873.jpg" alt="1873 bird's-eye map of San Antonio">
+      <img src="images/holc-racial-concentration-1934.jpg" alt="1934 HOLC map of San Antonio showing racial concentration by neighborhood">
+      <img src="images/eviction-map.jpg" alt="Map of evictions by census tract in San Antonio">
+    </div>
+    <div class="hero-text">
+      <h1>Unpacking Poverty</h1>
+      <div class="subtitle">UnpackingPoverty.org</div>
+    </div>
+  </div>
+  <div class="hero-captions">
+    <div>San Antonio, 1873</div>
+    <div>Racial concentration, 1934 (HOLC)</div>
+    <div>Evictions by census tract, 2019</div>
+  </div>
+
+  <header>
+    <h1>Articles Published</h1>
+    <div class="subtitle">A running list</div>
+  </header>
+
+  <ol>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXEviction" target="_blank" rel="noopener">Kicked to the Curb: How Eviction Can Make Poverty&rsquo;s Impacts Even Worse</a>
+        <div class="meta">Medium &middot; September 10, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXEnergy" target="_blank" rel="noopener">Unsung Hero: How Utility Assistance Plays a Vital Role in Helping the Poor</a>
+        <div class="meta">Medium &middot; July 22, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXChildCare" target="_blank" rel="noopener">What&rsquo;s a Child Care Desert? And Why It Should Matter if You&rsquo;re Living in One</a>
+        <div class="meta">Medium &middot; March 31, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/povertyyardstick" target="_blank" rel="noopener">Measuring Poverty with a Yardstick</a>
+        <div class="meta">Medium &middot; March 14, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXSingleMothers" target="_blank" rel="noopener">Hardship Personified: Single Mothers and Single Mothers of Color</a>
+        <div class="meta">Medium &middot; February 18, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/PovtyPyramid" target="_blank" rel="noopener">The Poverty Pyramid: Who&rsquo;s Got it Worst in America?</a>
+        <div class="meta">Medium &middot; February 5, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXMobility" target="_blank" rel="noopener">Moving On: Why Poverty Means You Move More, and Why That Matters</a>
+        <div class="meta">Medium &middot; January 21, 2018</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/FrankLaubach" target="_blank" rel="noopener">Literacy Lives: How Someone You Probably Never Heard of Deserves the Nobel Prize</a>
+        <div class="meta">The Huffington Post &middot; October 21, 2017</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXHP3" target="_blank" rel="noopener">Left Behind: In San Antonio, Nation&rsquo;s 7th Largest City, More Than 100K Lack a Ninth Grade Education</a>
+        <div class="meta">The Huffington Post &middot; October 9, 2017</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXHP2" target="_blank" rel="noopener">San Antonio and the Geography of Poverty</a>
+        <div class="meta">The Huffington Post &middot; October 2, 2017</div>
+      </div>
+    </li>
+    <li>
+      <div class="entry">
+        <a href="http://bit.ly/SATXHP1" target="_blank" rel="noopener">Looking through an Equity Lens at San Antonio</a>
+        <div class="meta">The Huffington Post &middot; September 26, 2017</div>
+      </div>
+    </li>
+  </ol>
+</main>
+</body>
+</html>
